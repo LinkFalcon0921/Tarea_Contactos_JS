@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/webSearch.js"></script>
+    <title>My Contacts</title>
+</head>
+
+<body onload="setDataContacts()">
+    <div class="head-contacts">
+        <h2>Contactos</h2>
+    </div>
+    <div class="container-grid">
+        <table id="data" class="contacts-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last-name</th>
+                    <th>Phone-number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Loading</td>
+                    <td>Loading</td>
+                    <td>Loading</td>
+                </tr>
+            </tbody>
+            <!-- Body with data here -->
+        </table>
+        <form method="post">
+        <div id="form-add" class="container-form">
+            <!-- <div id="head-form">
+                <h3>Agregar</h3>
+            </div> -->
+            <div>
+                <h2 id="title-form">Agregar</h2>
+            </div>
+            <!-- Add form here add new contacts -->
+            <div>
+                <label for="name">Name</label>
+                <input type="text" class="info-data" name="name-text" id="name">
+            </div>
+            <div>
+                <label for="l-name">Last name</label>
+                <input type="text" class="info-data" name="l-name-text" id="l-name">
+            </div>
+            <div>
+                <label for="tel-phone">Telefono</label>
+                <input type="tel" class="info-data" name="tel-text" id="tel-phone">
+            </div>
+            <div>
+                <input onclick="checkData()" type="button" class="summit" value="Agregar">
+            </div>
+        </div>
+    </form>
+    </div>
+    <!-- Script -->
+    <script src="js/websent.js"></script>
+</body>
+
+</html>
